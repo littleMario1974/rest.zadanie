@@ -1,0 +1,35 @@
+GET http://localhost:8080/countries
+
+###
+GET http://localhost:8080/countries/33
+
+###
+POST http://localhost:8080/countries
+Content-Type: application/json
+
+{
+  "name": "Stany Zjednoczone",
+  "language": "angielski",
+  "capital": "Waszyngton",
+  "currency": "dolar amerykański",
+  "population_in_millions": "331.4"
+
+
+}
+
+###
+PUT http://localhost:8080/countries/1
+Content-Type: application/json
+
+{
+  "name": "Kanada",
+  "language": "angielski, francuski",
+  "capital": "Ottawa",
+  "currency": "dolar kanadyjki",
+  "population_in_millions": 37.9
+
+
+}
+
+###
+DELETE http://localhost:8080/countries/1
